@@ -18,26 +18,44 @@ class ProfileViewController: UIViewController {
     
     private let dataProvider = DataProviderService()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func loadUserDataButtonAction(_ sender: UIButton) {
         
-        dataProvider.loadUserData()
+        updateUI(avatarName: dataProvider.loadUserData().userAvatarName,
+                 firstName: dataProvider.loadUserData().userFirstName,
+                 lastName: dataProvider.loadUserData().userLastName,
+                 eMail: dataProvider.loadUserData().userEmail,
+                 address: dataProvider.loadUserData().userAdderss)
+        
+
     }
     
     @IBAction func loadAdminDataButtonAction(_ sender: UIButton) {
         
-        dataProvider.loadAdminData()
+        updateUI(avatarName: dataProvider.loadAdminData().adminAvatarName,
+                 firstName: dataProvider.loadAdminData().adminFirstName,
+                 lastName: dataProvider.loadAdminData().adminLastName,
+                 eMail: dataProvider.loadAdminData().adminEmail,
+                 address: dataProvider.loadAdminData().adminAdderss)
+        
+
     }
     
-    func updateUI() {
+    func updateUI(avatarName: String,
+                  firstName: String,
+                  lastName: String, 
+                  eMail: String,
+                  address: String) {
         
-//        avaImageView.image = UIImage(named: "")
-//        firstNameLabel.text =
-//        lastNameLabel.text =
-//        eMailLabel.text =
-//        addressLabel.text =
+        avaImageView.image = UIImage(named: "\(avatarName)")
+        firstNameLabel.text = firstName
+        lastNameLabel.text = lastName
+        eMailLabel.text = eMail
+        addressLabel.text = address
     }
+    
 }

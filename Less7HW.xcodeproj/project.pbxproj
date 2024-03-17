@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C5DCEC02BA21B1E007DCDAF /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DCEBF2BA21B1E007DCDAF /* Protocol.swift */; };
+		4C5DCEC22BA21C9C007DCDAF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DCEC12BA21C9C007DCDAF /* Extension.swift */; };
 		CEEEFE142BA0673500D443D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEFE132BA0673500D443D1 /* AppDelegate.swift */; };
 		CEEEFE162BA0673500D443D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEFE152BA0673500D443D1 /* SceneDelegate.swift */; };
 		CEEEFE1B2BA0673500D443D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEEFE192BA0673500D443D1 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C5DCEBF2BA21B1E007DCDAF /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		4C5DCEC12BA21C9C007DCDAF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CEEEFE102BA0673500D443D1 /* Less7HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Less7HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEEFE132BA0673500D443D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEEFE152BA0673500D443D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 			children = (
 				CEEEFE312BA077C100D443D1 /* UserModel.swift */,
 				CEEEFE332BA077DA00D443D1 /* AdminModel.swift */,
+				4C5DCEBF2BA21B1E007DCDAF /* Protocol.swift */,
+				4C5DCEC12BA21C9C007DCDAF /* Extension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,8 +229,10 @@
 				CEEEFE142BA0673500D443D1 /* AppDelegate.swift in Sources */,
 				CEEEFE302BA06C4F00D443D1 /* ProfileViewController.swift in Sources */,
 				CEEEFE322BA077C100D443D1 /* UserModel.swift in Sources */,
+				4C5DCEC02BA21B1E007DCDAF /* Protocol.swift in Sources */,
 				CEEEFE342BA077DA00D443D1 /* AdminModel.swift in Sources */,
 				CEEEFE162BA0673500D443D1 /* SceneDelegate.swift in Sources */,
+				4C5DCEC22BA21C9C007DCDAF /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
